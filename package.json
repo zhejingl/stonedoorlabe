@@ -1,0 +1,11 @@
+{
+  "name": "stonedoorlab",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.16.1"
+  },
+  "main": "app.js"
+}
