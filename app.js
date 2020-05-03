@@ -10,6 +10,7 @@ app.get('/', function(req, res) {
         res.contentType('application/text');
         // Synchronous read - only because we expect the file to be very small
         var contents = fs.readFileSync(process.env.READ_FROM_FILE, 'utf8');
+        console.log('get request');
         res.send(contents);
     }
     else {
@@ -19,6 +20,6 @@ app.get('/', function(req, res) {
     }
 });
 
-var port = (process.env.APP_PORT || 8080);
+var port = (process.env.APP_PORT || 8090);
 app.listen(port);
 console.log("Node Backend is listening at " + port);
