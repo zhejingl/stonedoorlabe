@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
         res.contentType('application/text');
         // Synchronous read - only because we expect the file to be very small
         var contents = fs.readFileSync(process.env.READ_FROM_FILE, 'utf8');
-        console.log('get request, add some changes');
+        console.log('get request, add some changes, more change');
         res.send(contents);
     }
     else {
